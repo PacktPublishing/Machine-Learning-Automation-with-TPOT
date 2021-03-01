@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Iris Predictioner</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Predictions:</h1>
+        <table>
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sepal Length</td>
+                <td>{{ sepal_length }}</td>
+              </tr>
+              <tr>
+                <td>Sepal Width</td>
+                <td>{{ sepal_width }}</td>
+              </tr>
+              <tr>
+                <td>Petal Length</td>
+                <td>{{ petal_length }}</td>
+              </tr>
+              <tr>
+                <td>Petal Width</td>
+                <td>{{ petal_width }}</td>
+              </tr>
+              <tr>
+                <td>Prediction</td>
+                <td>{{ prediction }}</td>
+              </tr>
+              <tr>
+                <td>Probability</td>
+                <td>{{ probability }}</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

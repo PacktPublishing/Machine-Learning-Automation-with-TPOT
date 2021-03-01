@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Iris Predictioner</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Iris Predictioner</h1>
+        <form method="POST" action="{{ url_for('index') }}">
+            {{ iris_form.csrf_token }}
+            <div class="single-input">
+                {{ iris_form.sepal_length.label }} {{ iris_form.sepal_length(size=18) }}
+            </div>
+            <div class="single-input">
+                {{ iris_form.sepal_width.label }} {{ iris_form.sepal_width(size=18) }}
+            </div>
+            <div class="single-input">
+                {{ iris_form.petal_length.label }} {{ iris_form.petal_length(size=18) }}
+            </div>
+            <div class="single-input">
+                {{ iris_form.petal_width.label }} {{ iris_form.petal_width(size=18) }}
+            </div>
+            <input class="btn-submit" type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
