@@ -2,15 +2,15 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/add_get')
-def add_get():
+@app.route('/adding')
+def adding_get():
     num1 = int(request.args.get('num1'))
     num2 = int(request.args.get('num2'))
     return f'<h3>{num1} + {num2} = {num1 + num2}</h3>'
 
 
-@app.route('/add_post', methods=['POST'])
-def add_post():
+@app.route('/adding', methods=['POST'])
+def adding_post():
     data = request.get_json()
     num1 = data['num1']
     num2 = data['num2']

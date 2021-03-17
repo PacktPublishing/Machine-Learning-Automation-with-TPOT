@@ -5,7 +5,7 @@ app = Flask(__name__)
 api = Api(app)
 
 
-class Add(Resource):
+class Adding(Resource):
     @staticmethod
     def get():
         num1 = int(request.args.get('num1'))
@@ -19,8 +19,8 @@ class Add(Resource):
         num2 = data['num2']
         return jsonify({'result': num1 + num2})
 
-api.add_resource(Add, '/add')
+api.add_resource(Adding, '/adding')
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8500)
+    app.run(host='0.0.0.0', port=8000)

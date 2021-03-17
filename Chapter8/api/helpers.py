@@ -1,12 +1,10 @@
 def int_to_species(in_species):
     if in_species == 0:
         return 'setosa'
-    elif in_species == 1:
+    if in_species == 1:
         return 'virginica'
-    elif in_species == 2:
+    if in_species == 2:
         return 'versicolor'
-    else:
-        return ''
 
 
 def predict_single(model, X):
