@@ -1,9 +1,12 @@
+import os
 import json
 import requests
+from dotenv import load_dotenv
+load_dotenv('.env')
 
 
 def predict(sepal_length, sepal_width, petal_length, petal_width):
-    URL = 'http://ec2-18-220-113-224.us-east-2.compute.amazonaws.com:8000/predict'
+    URL = os.getenv('API_ENDPOINT')
     req = requests.post(
         url=URL,
         json={
