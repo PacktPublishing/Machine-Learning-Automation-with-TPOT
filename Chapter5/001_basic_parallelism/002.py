@@ -15,7 +15,3 @@ if __name__ == '__main__':
 
     time_stop = time.time()
     print(f'Took {round(time_stop - time_start, 2)} seconds to execute!')
-
-
-
-
