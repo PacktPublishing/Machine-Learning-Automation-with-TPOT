@@ -57,6 +57,6 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * Automated Machine Learning with Microsoft Azure [[Packt]](https://www.packtpub.com/product/Automated%20Machine%20Learning%20with%20Microsoft%20Azure/9781800565319) [[Amazon]](https://www.amazon.com/dp/1800565313)
 
-## Get to Know the Authors
+## Get to Know the Author
 **Dario Radečić**
 is a full-time data scientist at Neos, in Croatia, a part-time data storyteller at Appsilon, in Poland, and a business owner. Dario has a master's degree in data science and years of experience in data science and machine learning, with an emphasis on automated machine learning. He is also a top writer in artificial intelligence on Medium and the owner of a data science blog called Better Data Science.
